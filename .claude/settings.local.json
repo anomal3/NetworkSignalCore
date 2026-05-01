@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item *)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\asdk\\\\RiderProjects\\\\NetworkSignalCore\\\\src\\\\NetworkSignalCore.Client\" -Recurse | Where-Object { $_.Extension -eq \".cs\" -and $_.FullName -notmatch \"obj\" } | Select-Object -ExpandProperty FullName)",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\asdk\\\\RiderProjects\\\\NetworkSignalCore\\\\README.md\"\\).Count; \\(Get-Item \"C:\\\\Users\\\\asdk\\\\RiderProjects\\\\NetworkSignalCore\\\\README.md\"\\).Length)",
+      "PowerShell(cmd /c \"C:\\\\Users\\\\asdk\\\\RiderProjects\\\\NetworkSignalCore\\\\build.bat\")"
+    ]
+  }
+}
